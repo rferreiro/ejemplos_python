@@ -19,3 +19,7 @@ print(f'Nombre completo en mayúsculas:{nombreEntero.upper()}')
 
 # Nombre en minúsculas
 print(f'Nombre completo en minúsculas:{nombreEntero.lower()}')
+
+# Probar más posiciones
+tresPosiciones = nombre[0:3]
+print(tresPosiciones)
