@@ -22,4 +22,4 @@ print(f'Nombre completo en minúsculas:{nombreEntero.lower()}')
 
 # Probar más posiciones 
 cincoPosiciones = nombre[0:5]
-print(cincoPosiciones)
+print(type(cincoPosiciones))
