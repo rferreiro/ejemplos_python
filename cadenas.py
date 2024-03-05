@@ -10,9 +10,11 @@ dosPosiciones = nombre[0:2]
 print(dosPosiciones)
 print(nombre[3:1:-1])
 
-# Comentarios finales añadidos
 nombreEntero = nombre +' '+ apellidos
 print(f'Nombre Completo: {nombreEntero}')
 longitud = len(nombreEntero)
 print(f'La longitud total es de: {longitud} caracteres' )
 print(f'Nombre completo en mayúsculas:{nombreEntero.upper()}')
+
+# Nombre en minúsculas
+print(f'Nombre completo en minúsculas:{nombreEntero.lower()}')
