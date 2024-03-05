@@ -1,6 +1,6 @@
 # Pruebas de números
 print(2)
-print(2.5)
+print(type(2.5))
 
 #Operadores
 print(2 + 3)
