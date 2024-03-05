@@ -1,4 +1,4 @@
-lenguajes = ['Python', 'Kotlin', 'Java', 'JavaScript']
+lenguajes = ['Python', 'Kotlin', 'Java', 'JavaScript', 'Git']
 
 # Iterador
 for lenguaje in lenguajes:
