@@ -21,5 +21,5 @@ print(f'Nombre completo en mayúsculas:{nombreEntero.upper()}')
 print(f'Nombre completo en minúsculas:{nombreEntero.lower()}')
 
 # Probar más posiciones 
-tresPosiciones = nombre[0:3]
-print(tresPosiciones)
+cuatroPosiciones = nombre[0:4]
+print(cuatroPosiciones)
