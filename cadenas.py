@@ -18,3 +18,7 @@ print(f'Nombre completo en mayúsculas:{nombreEntero.upper()}')
 
 # Nombre en minúsculas
 print(f'Nombre completo en minúsculas:{nombreEntero.lower()}')
+
+# Probar más posiciones 
+cincoPosiciones = nombre[0:5]
+print(type(cincoPosiciones))
