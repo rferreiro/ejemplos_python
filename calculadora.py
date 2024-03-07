@@ -44,11 +44,11 @@ def app():
         opcion = input('Seleccione una opción: \r\n')
         opcion = int(opcion)
 
+        n1 = float(input('Introduce el primer número: '))
+        n2 = float(input('Introduce el segundo número: '))
+
         # Ejecutar las opciones
-        if opcion == 1:          
-            n1 = float(input('Introduce el primer número: '))
-            n2 = float(input('Introduce el segundo número: '))
-            
+        if opcion == 1:                     
             suma = Calculadora(n1,n2)
             suma.sumar()
 
@@ -56,9 +56,6 @@ def app():
             app()
             preguntar = False
         elif opcion == 2:
-            n1 = float(input('Introduce el primer número: '))
-            n2 = float(input('Introduce el segundo número: '))
-
             resta = Calculadora(n1,n2)
             resta.restar()
 
@@ -66,9 +63,6 @@ def app():
             app()            
             preguntar = False
         elif opcion == 3:
-            n1 = float(input('Introduce el primer número: '))
-            n2 = float(input('Introduce el segundo número: '))
-
             multiplica = Calculadora(n1,n2)
             multiplica.multiplicar()
             
@@ -76,9 +70,6 @@ def app():
             app()  
             preguntar = False
         elif opcion == 4:
-            n1 = float(input('Introduce el primer número: '))
-            n2 = float(input('Introduce el segundo número: '))
-
             division = Calculadora(n1,n2)
             division.dividir()
 
@@ -86,9 +77,6 @@ def app():
             app()              
             preguntar = False
         elif opcion == 5:
-            n1 = float(input('Introduce el primer número: '))
-            n2 = float(input('Introduce el segundo número: '))
-
             potencia = Calculadora(n1,n2)
             potencia.potenciar()
             
