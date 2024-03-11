@@ -1,0 +1,4 @@
+Nombre: Canadá
+Capital: Ottawa
+Población: 54545556
+Moneda: Dólar canadiense
