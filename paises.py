@@ -45,6 +45,7 @@ def app():
 def buscar_pais():
     nombre = input('Seleccione el país que desea buscar: \r\n')
 
+    # Probar excepciones
     try:
         with open(CARPETA + nombre + EXTENSION) as pais:
             print('\r\n Información del país: \r\n')
@@ -53,7 +54,7 @@ def buscar_pais():
             print('\r\n')
     except IOError:
         print('El país no existe')
-        print(IOError)
+        print(IOError) 
 
 def ver_pais():
     archivos = os.listdir(CARPETA)
