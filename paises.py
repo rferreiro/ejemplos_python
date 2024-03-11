@@ -31,16 +31,47 @@ def app():
             editar_pais()
             preguntar = False
         elif opcion == 3:
-            print('Ver país')
+            ver_pais()
             preguntar=False
         elif opcion == 4:
-            print('Buscar país')
+            buscar_pais()
             preguntar=False
         elif opcion == 5:
-            print('Eliminar país')
+            eliminar_pais()
             preguntar=False
         else:
             print('Opción no válida, intente de nuevo')                                                
+
+def eliminar_pais():
+    print('Eliminar país')
+
+def buscar_pais():
+    nombre = input('Seleccione el país que desea buscar: \r\n')
+
+    # Probar excepciones
+    try:
+        with open(CARPETA + nombre + EXTENSION) as pais:
+            print('\r\n Información del país: \r\n')
+            for linea in pais:
+                print(linea.rstrip())
+            print('\r\n')
+    except IOError:
+        print('El país no existe')
+        print(IOError) 
+
+def ver_pais():
+    archivos = os.listdir(CARPETA)
+
+    # Para controlar que solo sean .txt
+    archivos_txt = [i for i in archivos if i.endswith(EXTENSION)]
+
+    for archivo in archivos_txt:
+        with open(CARPETA + archivo) as pais:
+            for linea in pais:
+                # Imprime los contenidos
+                print(linea.rstrip())
+            # Imprime un separador entre países
+            print('\r\n')
 
 def editar_pais():
     print('Escribe el nombre del país a editar')
@@ -74,6 +105,9 @@ def editar_pais():
         print('\r\n País editado correctamente \r\n')
     else:
         print('Ese país no existe')
+
+    # Reiniciar la app
+    app()
 
 
 def agregar_pais():
