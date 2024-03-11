@@ -1,4 +1,0 @@
-Nombre: EEUU
-Capital: Washington
-Población: 1313515351
-Moneda: Dolar

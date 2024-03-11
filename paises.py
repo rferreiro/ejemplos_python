@@ -43,7 +43,13 @@ def app():
             print('Opción no válida, intente de nuevo')                                                
 
 def eliminar_pais():
-    print('Eliminar país')
+    nombre = input('Seleccione el país que desea eliminar: \r\n')
+
+    try:
+        os.remove(CARPETA + nombre + EXTENSION)
+        print('\r\n País eliminado correctamente')
+    except:
+        print('No existe ese contacto')
 
 def buscar_pais():
     nombre = input('Seleccione el país que desea buscar: \r\n')
