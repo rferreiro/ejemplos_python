@@ -37,10 +37,13 @@ def app():
             buscar_pais()
             preguntar=False
         elif opcion == 5:
-            print('Eliminar país')
+            eliminar_pais()
             preguntar=False
         else:
             print('Opción no válida, intente de nuevo')                                                
+
+def eliminar_pais():
+    print('Eliminar país')
 
 def buscar_pais():
     nombre = input('Seleccione el país que desea buscar: \r\n')
